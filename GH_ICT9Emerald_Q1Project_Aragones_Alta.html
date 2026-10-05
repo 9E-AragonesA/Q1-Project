@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project</title>
+    <style>
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+            nav {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8%;
+        background-color: #101828;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+        .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 35px;
+    }   
+
+    .my-logo{
+            border-radius: 90%;
+            }
+
+    .nav-links a {
+        color: #e63946;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #3b55a0;
+    }
+
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #2661e0;
+    color: #333;
+    margin: 0;
+    }
+
+    header {
+        background-color: #b93838;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 30px;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    header h1 {
+        margin: 15px 0 10px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    h3{
+        color: #4a69bd;
+    }
+
+    section {
+        background-color: white;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px #cccccc;
+    }
+
+    section h2 {
+        color: #4a69bd;
+    }
+
+    .profile {
+        display: block;
+        margin: 10px auto;
+        border-radius: 50%;
+    }
+
+    span {
+        color: #3b55a0;
+        font-weight: bold;
+    }
+
+    li {
+        margin: 8px;
+    }
+
+    dt {
+        font-weight: bold;
+        color: #b93838;
+    }
+
+    dd {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: #4a69bd;
+        font-weight: bold;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+
+    button {
+        background-color: #4a69bd;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #3b55a0;
+    }
+
+    footer {
+        background-color: #b93838;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    .container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 30px;              
+    margin-top: 50px;
+    }
+
+    .margin {
+        margin-bottom: 10px;    
+    }
+
+    .imgborder {
+        border: 4px solid #b93838;
+        border-radius: 10px;
+    }
+    </style>
+    <link rel="stylesheet" href="styles_Q1Project.css">
+</head>
+
+<body>
+    <!-- START OF HEADER -->
+    <nav>
+        <div class="logo">
+            <img src="/redlogo.png" class="my-logo" alt="logo" width="60px"> 
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- END OF HEADER -->
+
+    <!-- HERO -->
+    <header>
+        <img src="pic.png" alt="My Logo">
+
+        <h1>Welcome to My Portfolio</h1>
+
+        <p>
+            Aspiring <span><u>WEB DESIGNER</u></span>.
+        </p>
+    </header>
+    <!-- END OF HERO -->
+
+    <div>
+    <!-- START OF ABOUT ME -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Hi! I am <span><i>Alta Aragones</i></span>, an OBMC JHS student who enjoys learning new things.
+            </p>
+
+            <p>
+                I am interested in multimedia arts, music, cooking, and
+                design.
+            </p>
+        </section>
+
+        <section>
+            <h2>Get To Know Me!</h2>
+
+            <h3>My Interests</h3>
+            <ul>
+                <li>Technology</li>
+                <li>Sports</li>
+                <li>Music</li>
+                <li>Gaming</li>
+            </ul>
+
+            <h3>My Projects</h3>
+            <ol>
+                <li>My First Website</li>
+                <li>School Project</li>
+                <li>Personal Portfolio</li>
+            </ol>
+
+
+            <h3>What I Know</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Used to create the structure of a webpage.</dd>
+
+                <dt>CSS</dt>
+                <dd>Used to design and style a webpage.</dd>
+
+                <dt>Portfolio</dt>
+                <dd>A collection of my information and projects.</dd>
+            </dl>
+        </section>
+        <!-- END OF GET TO KNOW ME -->
+
+        <section>
+             <!-- MY WORKS -->
+           <div class="my_works">
+
+               <h2>My Works</h2>
+
+            <!-- START OF SW 1 -->
+                <div class="container">
+
+                <!-- SW IMAGE-->
+                    <img class="imgborder" src="/sw1 screenshot.png" alt="rateamovie" width="400">
+
+                <!-- TEXT -->
+                <div>
+                    <h3><a href="https://github.com/new">My Top Spotify Artist</a></h3>
+
+            <!-- LIST -->
+                <ul>
+                    <li class="margin">✓ HTML & CSS Projects</li>
+                    <li class="margin">✓ Spotify Artist</li>
+                    <li class="margin">✓ List, Links and Images</li>
+                </ul>
+            </div>
+            </div>
+        <!-- END OF SW 1 -->
+            
+        <!-- START OF DRILL 2-->
+            <div class="container">
+
+            <!-- MOVIE IMAGE-->
+                <img class="imgborder" src="/rate a movie .png" alt="rateamovie" width="400">
+
+            <!-- TEXT -->
+            <div>
+                <h3><a href="https://github.com/new">My Rate a Movie Form</a></h3>
+
+            <!-- LIST -->
+                <ul>
+                    <li class="margin">✓ HTML & CSS Projects</li>
+                    <li class="margin">✓ HTML Forms</li>
+                    <li class="margin">✓ Movie Recommendations</li>
+                </ul>
+            </div>
+            </div>
+        <!-- END OF DRILL 2-->
+
+        <!-- START OF FORM -->
+        <section>
+
+        <!-- CONTACT -->
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">
+                    <span>Name:</span>
+                </label>
+                <input
+                    type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <!-- EMAIL -->
+                <label for="email">
+                    <span>Email:</span>
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <!-- RATE -->
+                <label for="rate">
+                    <span>Rate my Portfolio:</span>
+                </label>
+
+                <select id="rate" name="rate">
+                    <option value="SELECT RATING" disabled selected hidden>--SELECT RATING--</option>
+                    <option value="Unsatisfactory">Unsatisfactory</option>
+                    <option value="Needs Improvement">Needs Improvement</option>
+                    <option value="Meets Expectations">Meets Expectations</option>
+                    <option value="Exceeds Expectations">Exceeds Expectations</option>
+                    <option value="Outstanding">Outstanding</option>
+                </select>
+
+                <!-- FEEDBACK -->
+                <label for="feedback">
+                    <span>Feedback:</span>
+                </label>
+
+                <textarea
+                    id="feedback"
+                    name="feedback"
+                    rows="5"
+                    placeholder="Write your feedback here">
+                </textarea>
+
+                <button type="submit">
+                    Submit
+                </button>
+
+            </form>
+        </section>
+        <!-- END OF FORM -->
+
+    </div>
+
+    <!-- START OF FOOTER -->
+    <footer>
+        <p>© 2026 | Alta Rhietta A. Aragones | Q1-Project</p>
+    </footer>
+    <!-- END OF FOOTER -->
+
+</body>
+</html>
